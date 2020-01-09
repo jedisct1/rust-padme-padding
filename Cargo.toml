@@ -1,0 +1,16 @@
+[package]
+name = "padme-padding"
+version = "0.1.0"
+authors = ["Frank Denis <github@pureftpd.org>"]
+edition = "2018"
+description = "Padme padding scheme for Rust"
+keywords = ["padme", "padding", "purb", "privacy", "no_std"]
+homepage = "https://github.com/jedisct1/rust-padme-padding"
+repository = "https://github.com/jedisct1/rust-padme-padding"
+readme = "README.md"
+license = "MIT"
+
+[profile.release]
+codegen-units = 1
+incremental = false
+panic = "abort"
